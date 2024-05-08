@@ -1,0 +1,213 @@
+#home {
+    background-image:url("../img/bg3.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#home::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* adjust the opacity and color as needed */
+}
+.uk-navbar-item.uk-logo img {
+   max-height: 50px;
+	
+	
+}
+
+uk-grid-large .welcome-title{
+	text-align: center;
+}
+
+
+/* Add a background color to the navbar when it's sticky */
+.uk-navbar-sticky {
+    background-color: #fff;
+}
+
+/* Change the background color of the navbar when the user scrolls down */
+.uk-navbar-container.uk-sticky {
+    transition: background-color 0.3s ease;
+}
+
+.uk-navbar-container.uk-sticky .uk-navbar-sticky {
+    background-color: #AF7A1F;
+}
+
+/* Change the color of the active navbar link to white, and the color of the other links to a different color */
+.uk-navbar-container.uk-sticky .uk-navbar-nav>li>a:active {
+    color: #AF7A1F;
+}
+
+.uk-navbar-container.uk-sticky .uk-navbar-nav>li>a:not(:active) {
+    color: #F6B81E;
+}
+#portfolio{
+    background-color: #020202;
+}
+
+
+#services {
+    background-color: #020202;
+}
+
+.uk-button uk-button-primary button-readmore {
+	background-color: aqua;
+}
+
+#services h2 {
+    margin-top: 0;
+}
+
+#services .uk-card {
+    padding: 50px 20px;
+}
+
+#services .uk-card-title {
+    margin-top: 20px;
+}
+
+#services .uk-text-muted {
+    margin-top: 0;
+}
+
+#services .uk-margin-bottom {
+    display: inline-block;
+    color: #AF7A1F;
+}
+
+#services .uk-margin-bottom svg {
+    stroke-width: 2;
+}
+
+#contact {
+    background-color: #ffffff;
+}
+
+#contact h2 {
+    margin-top: 0;
+}
+
+#contact form {
+    margin-top: 20px;
+}
+
+#contact .uk-margin {
+    margin-bottom: 20px;
+}
+
+#contact .uk-button {
+    background-color: #AF7A1F;
+    border-color: #AF7A1F;
+}
+
+.uk-button {
+     background-color: #AF7A1F;
+    border-color: #AF7A1F;
+	color: #fff;
+}
+
+.uk-button:hover {
+     background-color: #F6B81E;
+    border-color: #F6B81E;
+    color: #fff;
+}
+
+#contact .uk-button:hover {
+    background-color: #F6B81E;
+    border-color: #F6B81E;
+    color: #fff;
+}
+
+#footer{
+    background-color: #AF7A1F;
+}
+
+@media (max-width: 960px) {
+    #services .uk-child-width-1-3@m {
+        margin-top: 40px;
+    }
+
+    #contact .uk-child-width-1-2@m {
+        margin-top: 40px;
+    }
+    #about img{
+        display: block;
+        margin: 0 auto;
+
+    }
+    #about h2,p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .uk-navbar-item.uk-logo {
+        width: 150px;
+        height: 25px;
+    }
+    #services .uk-child-width-1-3@m {
+        margin-top: 20px;
+    }
+
+    #contact .uk-child-width-1-2@m {
+        margin-top: 20px;
+    }
+
+    #contact form {
+        margin-top: 0;
+    }
+    #about img,h2,p{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .uk-navbar-item.uk-logo {
+        width: 100px;
+        height: 20px;
+    }
+    #services .uk-card {
+        padding: 30px 15px;
+    }
+
+    #services .uk-card-title {
+        font-size: 1.2rem;
+    }
+
+    #services .uk-margin-bottom svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    #contact .uk-child-width-1-2@m {
+        flex-direction: column;
+    }
+    #about img,h2,p{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.uk-position-center h1 {
+	font-size: 5rem;
+}
+
+
+.uk-heading-medium {
+	color: #AF7A1F;
+}
+
+.uk-margin-small-left {
+	color: #AF7A1F;
+}
